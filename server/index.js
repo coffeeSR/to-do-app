@@ -1,9 +1,15 @@
 const express = require('express');
+const mongoose = require("mongoose");
 
 const app = express();
+const PORT = 7000;
 const indexRouter = require('./routes');
 
+mongoose.connect("mongodb://127.0.0.1:27017/toDoApp").then(()=>{
+    console.log("database connected")
+})
 
+app.use(express.json());
 app.use("/", indexRouter);
 
 app.listen(7000,()=>{
