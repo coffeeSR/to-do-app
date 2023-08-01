@@ -1,0 +1,14 @@
+1. Title component
+2. Todo component   ***
+    a. Add new Task button
+    b. Input
+    c. Label
+3. List Data component   ***
+    a. Checkbox
+    b. Task Name
+    c. Delete button
+    d. Add Subtask
+4. Conditional Rendering
+    a. If task, List the Task
+    b. Else, "No Subtask"
+5. Notification Popup
