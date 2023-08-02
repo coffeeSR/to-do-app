@@ -40,7 +40,7 @@ const Car = () => {
       <p>
         It is a {car.color} {car.model} from {car.year}.
       </p>
-      <Button variant = "primary" onClick = {() => updateColor("blue")}>
+      <Button variant = "danger" onClick = {() => updateColor("blue")}>
         Blue
       </Button>
     </>
