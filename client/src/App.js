@@ -7,7 +7,8 @@ function App({name}) {
     <>
       <Title name = "TODO App" />
       {/* <Example isGoal = {true}/> */}
-      <Example cars={cars}/>
+      {/* <Example cars={cars}/> */}
+      <Example isGoal={false} />
     </>
   );
 };
