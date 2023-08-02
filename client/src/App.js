@@ -1,9 +1,12 @@
-function App() {
+import Title from "./components/Title";
+import Example from "./components/Example";
+function App({name}) {
   return (
-    <div className="App">
-      Hello World
-    </div>
+    <>
+      <Title name = "TODO App" />
+      <Example/>
+    </>
   );
-}
+};
 
 export default App;
