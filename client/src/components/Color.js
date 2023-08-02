@@ -1,6 +1,6 @@
 // import React, {useState} from 'react';
 
-// export default function FavouriteColor() {
+// const FavouriteColor = () => {
 //     const [color, setColor] = useState("red");
 
 //   return (
@@ -15,10 +15,13 @@
 //     </>
 //   );
 // }
+// export default FavouriteColor;
 
 
 import {useState} from "react";
-export default function Car() {
+import Button from "react-bootstrap/Button";
+
+const Car = () => {
   const [car, setCar] = useState({
     brand: "Ford",
     model : "Mustang",
@@ -26,9 +29,9 @@ export default function Car() {
     color : "black",
   });
 
-  const updateColor = () => {
+  const updateColor = (newColor) => {
     setCar((previousState)=> {
-      return { ...previousState, color: "red"};
+      return { ...previousState, color: newColor};
     });
   };
   return (
@@ -37,9 +40,10 @@ export default function Car() {
       <p>
         It is a {car.color} {car.model} from {car.year}.
       </p>
-      <button type = "button" onClick = {updateColor}>
-        Red
-      </button>
+      <Button variant = "primary" onClick = {() => updateColor("blue")}>
+        Blue
+      </Button>
     </>
   );
 }
+export default Car;
