@@ -1,7 +1,9 @@
 import Title from "./components/Title";
 // import Example from "./components/Example";
 // import Color from "./components/Color"
-import Timer from "./components/Example";
+// import Timer from "./components/Example";
+// import Example from "./components/Example";
+import CustomHook from "./components/CustomHook";
 
 const App = (name) => {
   // const cars= ["BMW",'Ferrari', 'Mercedes'];
@@ -11,8 +13,9 @@ const App = (name) => {
       {/* <Example isGoal = {true}/> */}
       {/* <Example cars={cars}/> */}
       {/* <Example isGoal={false} /> */}
-      <Timer />
+      {/* <Example /> */}
       {/* <Color /> */}
+      <CustomHook />
     </>
   );
 };
